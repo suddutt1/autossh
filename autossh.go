@@ -99,5 +99,6 @@ func main() {
 	}
 	defer client.Close()
 	//ExecuteCommand(client, "ls -ltr")
+	//Following is a test
 	ExecuteMultipleCommand(client, []string{"cd simplemv/common", "source setFabricEnv.sh ", "cd ../orderer", "docker-compose up -d", "docker ps"})
 }
